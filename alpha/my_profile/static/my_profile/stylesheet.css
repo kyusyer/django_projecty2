@@ -1,0 +1,24 @@
+h1,
+h2,
+hr {
+    color: green
+}
+
+html {
+    background: lightblue;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+#skills {
+    margin-bottom: 0px;
+
+}
+
+.summary {
+
+    margin-left: 20px;
+    margin-right: 100px;
+
+}
