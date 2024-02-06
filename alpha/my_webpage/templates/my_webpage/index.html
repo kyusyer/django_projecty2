@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href={% static "my_webpage/style.css" %}>
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>
+        meta
+    </title>
+</head>
+
+<body>
+
+    <div class="welcome_sec">
+        <h1 id="welcome_h1">
+            Welcome to My Webpage
+        </h1>
+    </div>
+    <div class="unknown_section">
+        <h1>content here</h1>
+    </div>
+    <div class="sect3">
+        
+        <h1>Profile pic</h1> <div>
+        <img s src={% static "my_webpage/files/profile pic.jpg" %} alt="pic" height="300">
+        
+    </div>
+    </div>
+
+    <div id="container">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+    </div>
+    <div class="div4">
+        <iframe src={% static "my_webpage/files/video.html" %} frameborder="0" height="500" width="600"></iframe>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
