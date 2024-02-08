@@ -1,16 +1,17 @@
-h1,
+/* h1,
 h2,
 hr {
     color: green
-}
+} */
 
 html {
-    background: white;
+    background-color: transparent;
     margin-left: 50px;
     margin-top: 50px;
 
 }
 
+/* 
 #skills {
     margin-bottom: 0px;
 
@@ -21,4 +22,4 @@ html {
     margin-left: 20px;
     margin-right: 100px;
 
-}
+} */

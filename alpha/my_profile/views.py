@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request,"my_profile/index.html")
+
+def project(request):
+    return render(request, "my_profile/project.html")

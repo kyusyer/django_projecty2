@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'my_profile/stylesheet.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" ,>
+    <title>
+        My Profile
+    </title>
+</head>
+
+<body>
+    <!-- header content-->
+    <div class="header">
+        <div id="home_link">
+            <a href="{% url 'my_profile:index'%}"">Home</a>
+        </div>
+        <div id=" project_link">
+                <a href=" {% url 'my_profile:project' %}">Projects</a>
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>
