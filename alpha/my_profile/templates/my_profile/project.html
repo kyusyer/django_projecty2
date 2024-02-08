@@ -3,33 +3,20 @@
 {% block content %}
 <div id="project_block">
 
-    <h3>Morse code:encoder decoder</h3>
+    {% for project in projects %}
+    <h3>{{ project.name }}</h3>
     <ul>
         <li>
-            A program written in python that converts alphaneumeric characters into morse code or convert morse code
-            into alphanumeric characters
+            {{ project.desc }}
         </li>
         <br>
         <li>
-            project link: <a href="https://github.com/kyusyer/morsecode">
-                https://github.com/kyusyer/morsecode</a>
+            project link: <a href={{ project.link }}>
+                {{ project.link }}</a>
 
         </li>
     </ul>
+    {% endfor %}
 
-    <h3>Fullstack website using django</h3>
-    <ul>
-        <li>
-            A full stack website that contains my resume that is written in django
-
-        </li>
-        <br>
-        <li>
-            Project link: <a href="https://github.com/kyusyer/django_projecty2">
-                https://github.com/kyusyer/django_projecty2</a>
-
-        </li>
-
-    </ul>
 </div>
 {% endblock %}
