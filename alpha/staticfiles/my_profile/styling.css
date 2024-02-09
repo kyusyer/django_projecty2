@@ -1,0 +1,34 @@
+/* html_stylin */
+html {
+    background-color: lightcyan;
+}
+/*header styling*/
+#header {
+    background-color: skyblue;
+    display: flex;
+    border: 1px solid black;
+
+
+}
+
+
+#home_link,
+#project_link {
+    padding: 5px;
+    margin-left: 15px;
+
+}
+
+/* index-body styling */
+#body_container {
+    margin: 15px;
+}
+
+a, u{
+    text-decoration: none;
+}
+
+/* project_styling */
+#project_block {
+    padding: 15px;
+}
