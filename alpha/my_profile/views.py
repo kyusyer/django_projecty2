@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
+from django.urls import reverse
 
 from django import forms
 
@@ -50,5 +51,6 @@ def add_project(request):
                     "link": link
                 }
             )
+            return HttpResponseRedirect(reverse("my_profile:projects"))
 
     return render(request, "my_profile/add_project.html", {"form": NewTaskForm()} )
