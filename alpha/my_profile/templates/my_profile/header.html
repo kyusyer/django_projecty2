@@ -14,17 +14,22 @@
 
 <body>
     <!-- header content-->
-    <div id="header">
-        <div id="home_link">
-            <a href="{% url 'my_profile:index'%}"">Home</a>
-        </div>
-        <div id="project_link">
+    <heading>
+        <div id="header">
+            <div id="home_link">
+                <a href="{% url 'my_profile:index'%}">Home</a>
+            </div>
+            <div id=" project_link">
                 <a href=" {% url 'my_profile:project' %}">Projects</a>
+            </div>
         </div>
-    </div>
+    </heading>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 
-    {% block content %}
-    {% endblock %}
+
 </body>
 
 </html>

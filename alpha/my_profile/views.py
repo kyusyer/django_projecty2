@@ -51,6 +51,6 @@ def add_project(request):
                     "link": link
                 }
             )
-            return HttpResponseRedirect(reverse("my_profile:projects"))
+            return HttpResponseRedirect(reverse("my_profile:project"))
 
     return render(request, "my_profile/add_project.html", {"form": NewTaskForm()} )
