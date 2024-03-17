@@ -56,7 +56,7 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
-CSRF_TRUSTED_ORIGINS = ['https://djangoprojecty2-production.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://djangoprojecty2-production.up.railway.app']
 
 ROOT_URLCONF = 'alpha.urls'
 
